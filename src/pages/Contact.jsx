@@ -14,10 +14,10 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault()
     emailjs.sendForm(
-      'service_px2csvl',
-      'template_gq04gbl',
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
       form.current,
-      '829Tq9_j7ORF6xGNP'
+      import.meta.env.VITE_EMAILJS_USER_ID
     ).then(
       () => {
         alert('Message sent successfully!')
