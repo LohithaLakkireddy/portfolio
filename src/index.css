@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-primary text-text font-sans;
+}
+
+@keyframes float {
+  0% { transform: translatey(0px); }
+  50% { transform: translatey(-10px); }
+  100% { transform: translatey(0px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.typewriter-text {
+  overflow: hidden;
+  border-right: none;
+  white-space: nowrap;
+  animation:
+    typing 3.5s steps(40, end);
+  max-width: 100%;
+  display: inline-block;
+}
+
+.social-icon {
+  @apply w-12 h-12 flex items-center justify-center rounded-full text-white bg-gray-700 hover:bg-accent hover:text-black transition text-xl shadow;
+}
+
+.project-card {
+  @apply flex flex-col justify-between h-full;
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #38bdf8 }
+}
