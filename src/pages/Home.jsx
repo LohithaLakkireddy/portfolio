@@ -66,7 +66,7 @@ const Home = () => {
         className="flex-1 flex justify-center"
       >
         <img
-          src="/avatar.png"
+          src="/avatar.webp"
           alt="Avatar"
           className="w-64 h-64 md:w-80 md:h-80 object-contain animate-float"
         />
