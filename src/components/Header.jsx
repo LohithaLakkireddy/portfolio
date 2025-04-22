@@ -12,12 +12,11 @@ const Header = () => {
 
   return (
     <header className="bg-secondary text-white shadow-md sticky top-0 z-50">
-      <div className="container mx-auto flex justify-between items-center px-4 py-3">
+      <div className="container mx-auto flex justify-between items-center px-4 py-6">
         {/* Logo / Name */}
         <h1 className="text-lg font-bold">Portfolio</h1>
-
         {/* Desktop Menu */}
-        <nav className="hidden md:flex gap-4">
+        <nav className="hidden md:flex space-x-4">
           <NavLink to="/" onClick={closeMenu} className="hover:text-accent font-medium">Home</NavLink>
           {navItems.map((item) => (
             <NavLink
