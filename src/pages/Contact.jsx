@@ -1,6 +1,8 @@
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import SectionTitle from '../components/SectionTitle'
+import { ToastContainer, toast } from 'react-toastify'
+
 import {
   FaGithub,
   FaLinkedin,
@@ -25,11 +27,19 @@ const Contact = () => {
       import.meta.env.VITE_EMAILJS_USER_ID
     ).then(
       () => {
-        alert('Message sent successfully!')
+        toast.success('Message sent successfully!', {
+          position: 'top-right',
+          autoClose: 3000,
+          theme: 'dark',
+        })
         form.current.reset()
       },
       (error) => {
-        alert('Something went wrong. Try again')
+        toast.error('Something went wrong. Try again!', {
+          position: 'top-right',
+          autoClose: 3000,
+          theme: 'dark',
+        })
         console.error(error)
       }
     )
@@ -138,6 +148,7 @@ const Contact = () => {
           </p>
         </div>
       </div>
+      <ToastContainer />
     </section>
   )
 }
