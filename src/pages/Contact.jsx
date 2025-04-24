@@ -64,7 +64,6 @@ const Contact = () => {
               required
               placeholder="you@example.com"
               pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$"
-              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
               title="Enter a valid email address"
               className="w-full px-4 py-2 rounded bg-primary text-white border border-gray-600 focus:outline-accent focus:invalid:border-red-500 focus:invalid:ring-red-400"
             />
