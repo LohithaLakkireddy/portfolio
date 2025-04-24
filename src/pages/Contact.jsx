@@ -13,6 +13,11 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault()
+     // 🔍 Validate the form using built-in browser API
+    if (!form.current.checkValidity()) {
+      form.current.reportValidity() // show native validation tooltips
+      return
+    }
     emailjs.sendForm(
       import.meta.env.VITE_EMAILJS_SERVICE_ID,
       import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
