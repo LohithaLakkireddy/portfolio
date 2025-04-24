@@ -44,28 +44,27 @@ const Contact = () => {
           <div>
             <label className="block text-sm text-gray-300 mb-1">Name</label>
             <input
-            type="text"
-            id="from_name"
-            name="from_name"
-            required
-            placeholder="Your full name"
-            pattern="^[A-Za-z\s]{3,}$"
-            title="Name must contain only letters and spaces, min 3 characters"
-            className="..."
-          />
+              type="text"
+              id="from_name"
+              name="from_name"
+              required
+              placeholder="Your full name"
+              pattern="^[A-Za-z\s]{3,}$"
+              title="Name must contain only letters and spaces, min 3 characters"
+              className="w-full px-4 py-2 rounded bg-primary text-white border border-gray-600 focus:outline-accent"
+            />
           </div>
           <div>
             <label className="block text-sm text-gray-300 mb-1">Email</label>
-           <input
-            type="email"
-            id="from_email"
-            name="from_email"
-            required
-            placeholder="you@example.com"
-            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-            title="Please enter a valid email address"
-            className="..."
-          />
+            <input
+              type="email"
+              id="from_email"
+              name="from_email"
+              required
+              placeholder="you@example.com"
+              title="Enter a valid email address"
+              className="w-full px-4 py-2 rounded bg-primary text-white border border-gray-600 focus:outline-accent"
+            />
           </div>
           <div>
             <label className="block text-sm text-gray-300 mb-1">Message</label>
@@ -78,7 +77,7 @@ const Contact = () => {
               maxLength="500"
               placeholder="Let’s work together or just say hi..."
               title="Message should be between 10 and 500 characters"
-              className="..."
+              className="w-full px-4 py-2 rounded bg-primary text-white border border-gray-600 focus:outline-accent"
             ></textarea>
           </div>
           <button
