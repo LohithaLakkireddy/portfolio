@@ -42,35 +42,41 @@ const Contact = () => {
           action="#"
         >
           <div>
-            <label className="block text-sm text-gray-300 mb-1">Name</label>
+            <label htmlFor="from_name" className="block text-sm text-gray-300 mb-1">Name</label>
             <input
               type="text"
+              id="from_name"
               name="from_name"
               required
-              className="w-full px-4 py-2 rounded bg-primary text-white border border-gray-600 focus:outline-accent"
               placeholder="Your full name"
+              className="w-full px-4 py-2 rounded bg-primary text-white border border-gray-600 focus:outline-accent"
             />
           </div>
+
           <div>
-            <label className="block text-sm text-gray-300 mb-1">Email</label>
+            <label htmlFor="from_email" className="block text-sm text-gray-300 mb-1">Email</label>
             <input
               type="email"
+              id="from_email"
               name="from_email"
               required
-              className="w-full px-4 py-2 rounded bg-primary text-white border border-gray-600 focus:outline-accent"
               placeholder="you@example.com"
+              className="w-full px-4 py-2 rounded bg-primary text-white border border-gray-600 focus:outline-accent"
             />
           </div>
-          <div>
-            <label className="block text-sm text-gray-300 mb-1">Message</label>
+
+         <div>
+            <label htmlFor="message" className="block text-sm text-gray-300 mb-1">Message</label>
             <textarea
-              rows="4"
+              id="message"
               name="message"
+              rows="4"
               required
-              className="w-full px-4 py-2 rounded bg-primary text-white border border-gray-600 focus:outline-accent"
               placeholder="Let’s work together or just say hi..."
+              className="w-full px-4 py-2 rounded bg-primary text-white border border-gray-600 focus:outline-accent"
             ></textarea>
           </div>
+
           <button
             type="submit"
             className="bg-accent text-black font-semibold px-6 py-2 rounded hover:bg-blue-400 transition flex items-center gap-2"
