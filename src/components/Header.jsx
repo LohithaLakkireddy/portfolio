@@ -35,7 +35,12 @@ const Header = () => {
         </nav>
 
         {/* Hamburger */}
-        <button className="text-xl md:hidden" onClick={toggleMenu}>
+        <button
+          className="text-xl md:hidden"
+          onClick={toggleMenu}
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          title={menuOpen ? 'Close menu' : 'Open menu'}
+        >
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
