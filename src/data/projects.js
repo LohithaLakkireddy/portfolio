@@ -24,5 +24,19 @@ export const projects = [
     techStack: ['MongoDB', 'Express.js', 'React.js', 'Node.js'],
     github: '',
     live: ''
-  }
+  },
+  {
+    title: 'Diabetes Prediction using Machine Learning Techniques',
+    description: 'A machine learning-based solution to predict diabetes using various classification and ensemble models. The project involves data preprocessing, feature normalization, and performance comparison of models for accurate prediction.',
+    features: [
+      'Data preprocessing and normalization using Pandas and NumPy',
+      'Handled missing values and imbalanced data',
+      'Implemented and compared five ML classifiers',
+      'Achieved 99.4% accuracy using Random Forest Classifier',
+      'Visualized results using Matplotlib'
+    ],
+    techStack: ['Python', 'NumPy', 'Pandas', 'Matplotlib', 'Scikit-learn'],
+    github: '',  // Add your GitHub repo link here
+    live: ''     // If hosted, add live link here (e.g., Streamlit app or notebook viewer)
+  }  
 ]
